@@ -5,18 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <style>
+        body {
+            font-style: "Lato", "cursive";
+            color: rgb(82, 91, 101);
+            background-color: rgba(202, 200, 197, 0.539);
+        }
+        
         h1 {
-            font-size: 40px;
-            font-style: "proxima-nova", "Roboto";
+            font-size: 30px;
             color: rgb(52, 59, 67);
+        }
+        #banner {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin:0px auto 40px auto;
+        }
+        #container {
+            max-width: 900px;
+            margin:0px auto 40px auto;
         }
     </style>
 </head>
 <body>
-    <h1>
-        My Data Portfolio
-    </h1>
-    <img id="banner" src="http://github.com/ryan-lafferty-portfolio/static/Northern_Lights.jpeg">
+    <div id="container">
+        <div class="d-flex">
+            <div class="col-md-4">
+                <h1>
+                    Ryan Lafferty
+                </h1>
+            </div>
+            <div class="p-2 w-100">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-md">Transitioning Into Data and Statistics</div>
+        <div class="container-md">Currently Located in Orewa, Auckland but Soon to Relocate to Christchurch, Canterbury</div>
+
+        <img id="banner" src="/portfolio/ryan-lafferty-portfolio/static/Northern_Lights.jpeg">
+        <p>Welcome to my portfolio website. I'm thrilled to have you here! My name is Ryan,
+        and here you'll find example of my work as I progress and learn more in the field of data. 
+        I currently have two years experience an analyst in the horticulture industry. 
+        I just finished a year and a half software engineering certificate through Montgomery County Community College
+        and decided to take a step further towards data by enrolling in a Data Science Bootcamp through
+        The Institute of Technology and Auckland University of Technology to further upskill.
+        </p>
+        <p>All photography an experiences you may find or hear about are my own!
+            If there are any questions or you would like to say "Hi!" smash the contact links below!
+        </p>
+    </div>
 </body>
 </html>
