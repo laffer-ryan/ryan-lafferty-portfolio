@@ -26,10 +26,20 @@
         }
 
         .nav-link:hover {
-            opacity: 0.25;
+            opacity: 0.5;
         }
         .navbar-nav {
             justify-content: baseline;
+        }
+        .header-resume {
+            padding: 10px;
+            border-radius: 900px; /* Adjust the oval shape */
+            border: 2px solid rgb(162, 146, 63);
+            background-color: rgba(255, 255, 255, 0);; /* Set the background color for the oval */
+            text-decoration: none;
+            color: rgb(162, 146, 63);
+            font-family: "proxima nova";
+            font-size: 15px;
         }
 
         /* hero background image */
@@ -76,7 +86,7 @@
             background-color: black;
         }
         .card {
-            height: 500px;
+            height: 600px;
             overflow: auto;
         }
         .card-text {
@@ -156,10 +166,10 @@
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resume</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a href="static/resume.pdf" class="nav-link header-resume" download>Resume</a>
                     </li>
                 </ul>
                 
@@ -173,6 +183,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
                     <h2 class="hero_title" id="hero_title">Thank you for joining! I'm Ryan.</h2>
                     <p class="hero_desc" id="hero_desc">Embarking on a journey into the realm of data, where empowering decision-making is the key to unlocking insights for resounding success.</p>
+                    <p class="hero_desc" id="hero_desc_2">Analytics | Statistics | Geospatial | All Outdoor Activity</p>
                 </div>
             </div>
         </div>
@@ -197,6 +208,7 @@
                                 <li>Name: Ryan Lafferty</li>
                                 <li>Age: 33</li>
                                 <li>Occupation: Transitioning to Data</li>
+                                <li>Goal: Business, Data, Insights Analyst Role</li>
 
                             </ul>
                         </div>
@@ -258,7 +270,7 @@
                                   and other stakeholders to better prepare for and mitigate the impact of landslides, 
                                   potentially saving lives and reducing the economic impact of these events.</p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="https://github.com/laffer-ryan/Landslide_classification" class="btn btn-success">Github</a>
                             </div>
                         </div>
                     </div>
@@ -275,7 +287,7 @@
                                   The analysis attempts to provide insights into the factors influencing Airbnb pricing
                                  in New Zealand and demonstrates the potential of geospatial analysis for predicting real estate prices.</p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="https://github.com/laffer-ryan/AirBnB_Auckland" class="btn btn-success">Github</a>
                             </div>
                         </div>
                     </div>
@@ -296,25 +308,23 @@
                                 and which customers require additional attention or marketing efforts. Ultimately, 
                                 an RFM analysis can help businesses improve customer retention, increase revenue, and optimize marketing strategies.</p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="#" class="btn btn-success">Github</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-4">
                     <div class="card">
-                        <img class="card-img-top" src="static/rfm_seg_country.png" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="static/conifdence_heatmap.png" alt="Card image" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Online Retail RFM Analysis</h4>
-                            <p class="card-text">For this dataset, we will be performing an RFM analysis on customer transaction data. 
-                                RFM stands for Recency, Frequency, and Monetary Value,
-                                and is a widely used customer segmentation technique that helps businesses better understand their customer base.
-                                By analyzing customers based on their recency of purchase, frequency of purchase, and total monetary value spent,
-                                businesses can gain valuable insights into which customers are most valuable, which customers are at risk of leaving,
-                                and which customers require additional attention or marketing efforts. Ultimately, 
-                                an RFM analysis can help businesses improve customer retention, increase revenue, and optimize marketing strategies.</p>
+                            <h4 class="card-title text-center">DataCo Market Basket Analysis</h4>
+                            <p class="card-text">A market basket analysis is effective for identifying customer behaviors. 
+                                It uses a technique called associated rule learning for Data Mining. 
+                                It involves analyzing transactional data to identify the relationships between products that are 
+                                frequently purchased together. By analyzing these associating we can recommend store layout plans to 
+                                optimizing purchasing items or to cross sell and upsell products based on what is being purchased!</p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="https://github.com/laffer-ryan/Market-Basket-Analysis-/blob/main/DataCO_Market_Baskey_Analysis.ipynb" class="btn btn-success">Github</a>
                             </div>
                         </div>
                     </div>
@@ -325,7 +335,7 @@
                 <div class="col-lg-12 mt-4">
                     <div class="card" id="capstone">
                         <div class="card-body">
-                            <h4 class="card-title">Semantic Segmentation Using Landsat Satellite Imagery</h4>
+                            <h4 class="card-title text-center">Semantic Segmentation Using Landsat Satellite Imagery</h4>
                             <p class="card-text">For my two week capstone project, I demonstrated my new skills by collecting satellite imagery and
                                 creating a deep learning model to classify satellite imagery into specific land use categories. Semantic segmentation is a technique used in
                                  remote sensing and computer vision to classify each pixel in an image into different classes or categories.
